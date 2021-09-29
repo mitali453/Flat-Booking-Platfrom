@@ -1,11 +1,8 @@
-import React from 'react';
+import React  from 'react';
 
-function App() {
-  return (
-    <div className="bg-gray-700 text-white font-extrabold text-4xl">
-      This is our flat booking app
-    </div>
-  );
+function App(){
+    return(
+        <div className=" bg-gray-500 text-blue-400 text-5xl">This is App</div>
+    );
 }
-
 export default App;
