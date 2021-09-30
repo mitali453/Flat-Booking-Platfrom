@@ -1,10 +1,10 @@
 import React from 'react';
+import SearchFlat from './Components/SearchFlat';
 
 function App() {
   return (
-    <div className="bg-gray-700 text-white font-extrabold text-4xl">
-      hello world
-    </div>
+    <SearchFlat>
+    </SearchFlat>
   );
 }
 
