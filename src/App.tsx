@@ -1,10 +1,15 @@
 import React from 'react';
-import SearchFlat from './Components/SearchFlat';
+import OurFeatures from './Components/SearchComponents/OurFeatures';
+import PopularCategories from './Components/SearchComponents/PopularCategories';
+import SearchFlat from './Components/SearchComponents/SearchFlat';
 
 function App() {
   return (
-    <SearchFlat>
-    </SearchFlat>
+    <div>
+      <SearchFlat></SearchFlat>
+      <OurFeatures></OurFeatures>
+      <PopularCategories></PopularCategories>
+    </div>
   );
 }
 
