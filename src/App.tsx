@@ -1,16 +1,30 @@
 import React from 'react';
-import OurFeatures from './Components/SearchComponents/OurFeatures';
-import PopularCategories from './Components/SearchComponents/PopularCategories';
-import SearchFlat from './Components/SearchComponents/SearchFlat';
+
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import HomePage from './Pages/HomePage';
+import LoginPage from './Pages/LoginPage';
+import SignupPage from './Pages/SignupPage';
 
 function App() {
-  return (
-    <div>
-      <SearchFlat></SearchFlat>
-      <OurFeatures></OurFeatures>
-      <PopularCategories></PopularCategories>
-    </div>
-  );
-}
+    return (
+        <div>
+            <BrowserRouter>
+            <Switch>
+                <Route exact path="/">
+                    <HomePage></HomePage>
+                </Route>
+                <Route path="/login">
+                    <LoginPage></LoginPage>
+                </Route>
+                <Route path="/signup">
+                    <SignupPage></SignupPage>
+                </Route>
 
+                    
+            </Switch>
+            </BrowserRouter>
+        </div>
+
+    );
+}
 export default App;
