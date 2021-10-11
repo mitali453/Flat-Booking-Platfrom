@@ -7,6 +7,8 @@ const HomePage: FC<Props> = (props) => {
         <>
             <div>This is Home Page</div>
             <Link to="/"><span className=" text-blue-500"><button>Logout</button></span> </Link>
+            <br></br>
+            <Link to="/search"><span className=" text-blue-500"><button>Search here</button></span> </Link>
         </>
     );
 };
