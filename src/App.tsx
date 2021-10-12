@@ -3,6 +3,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import HomePage from './Pages/HomePage';
 import LoginPage from './Pages/LoginPage';
 import SearchPage from './Pages/SearchPage';
+import SearchResultPage from './Pages/SearchResultPage';
 import SignupPage from './Pages/SignupPage';
 import WelcomePage from './Pages/WelcomePage';
 
@@ -25,6 +26,9 @@ function App() {
                     </Route>
                     <Route path="/search">
                         <SearchPage></SearchPage>
+                    </Route>
+                    <Route path="/searchResult">
+                        <SearchResultPage></SearchResultPage>
                     </Route>
                 </Switch>
             </BrowserRouter>

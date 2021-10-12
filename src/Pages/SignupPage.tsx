@@ -1,6 +1,5 @@
 import { FC, memo } from "react";
 import { Link } from "react-router-dom";
-import WhiteLogo2 from "../Images/WhiteLogo2.png"
 interface Props {
 }
 const SignupPage: FC<Props> = (props) => {
@@ -13,7 +12,7 @@ const SignupPage: FC<Props> = (props) => {
             px-6 py-6 sm:px-10 sm:py-6 
              rounded-lg shadow-md lg:shadow-lg">
                         <div className="flex">
-                            <img className="h-40 w-48 mx-auto" src={WhiteLogo2} alt="" />
+                            <img className="h-40 w-48 mx-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToqEZo8cWlBOBDhGuIZaZU8Y9EKOfSOMIHGg&usqp=CAU" alt="" />
                         </div>
                         <form className="mt-6" method="POST">
                             <label className="block text-sm font-bold text-black uppercase">Name</label>
@@ -48,7 +47,7 @@ const SignupPage: FC<Props> = (props) => {
                             </button></span> </Link>
 
                             <div className="sm:flex sm:flex-wrap mt-8 sm:mb-4 text-md text-center">
-                                <Link to="/"><span className=" flex-2 underline ">login</span> </Link>
+                                <Link to="/login"><span className=" flex-2 underline ">login</span> </Link>
                             </div>
                         </form>
                     </div>
