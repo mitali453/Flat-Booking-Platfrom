@@ -186,7 +186,6 @@ const HomePage: FC<Props> = (props) => {
 
 
         </div>
-
     );
 };
 HomePage.defaultProps = {

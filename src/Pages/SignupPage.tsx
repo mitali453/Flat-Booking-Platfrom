@@ -1,36 +1,60 @@
 import { FC, memo } from "react";
+import { Link } from "react-router-dom";
+import WhiteLogo2 from "../Images/WhiteLogo2.png"
 interface Props {
-    
 }
 const SignupPage: FC<Props> = (props) => {
     return (
-        <>
         <div>
-            <div className=" flex flex-col lg:flex-row">
-                <div className=" flex h-full  lg:w-1/2 ">
-                    <div className=" sm:visible w-1/2 p-1 invisible absolute sm:relative">
-                        <img className=" h-1/2 w-full p-1 " src="https://www.swissotel.com/assets/0/92/3686/3768/3770/6442451433/ae87da19-9f23-450a-8927-6f4c700aa104.jpg" alt="##" />
-                        <img className=" h-1/2 p-1 pb-0" src="https://media-cdn.tripadvisor.com/media/photo-s/05/2c/b6/8c/de-java-hotel.jpg" alt="" />
-                    </div>
-                    <div className="  h-4/5 p-1 pl-0">
-                        <img src="https://www.ihgplc.com/-/media/ihg/images/brands/regent/regent_carousel_1.jpg" alt="" />
-                    </div>
-                </div>
+            <div className="flex flex-col h-screen bg-gray-600">
+                <div className="grid place-items-center mx-2 my-20  sm:my-auto">
 
-                <div className=" lg:w-1/2 lg:px-14 lg:py-10 px-8 py-6 sm:pb-0 text-center">
-                    <h1 className=" text-4xl sm:text-5xl font-semibold font-serif pb-4 lg:pb-6"> Welcome to our residence</h1>
-                    <p className=" text-medium sm:text-xl text-gray-700 pb-4 lg:pb-6">“If you want to be a leader in your community, buying your own home is an important step, because it is a well-known fact that, if you don’t own your own space, you are subconsciously telling your peers that your perspectives and judgments are unworthy.”</p>
-                    <button className=" border-solid border-4 text-xl font-medium text-white border-gray-600 bg-gray-600 px-3 py-1 sm:px-5 sm:py-2 hover:border-gray-600 hover:bg-white hover:text-black ">Learn More</button>
+                    <div className="w-11/12 p-12 bg-gray-200 sm:w-8/12 md:w-6/12 lg:w-5/12 2xl:w-4/12
+            px-6 py-6 sm:px-10 sm:py-6 
+             rounded-lg shadow-md lg:shadow-lg">
+                        <div className="flex">
+                            <img className="h-40 w-48 mx-auto" src={WhiteLogo2} alt="" />
+                        </div>
+                        <form className="mt-6" method="POST">
+                            <label className="block text-sm font-bold text-black uppercase">Name</label>
+                            <input id="email" type="email" name="email" placeholder="First & Last "
+                                className="block w-full border-2 border-gray-300 rounded-md py-3 px-1 mt-2 
+                    text-gray-800 appearance-none 
+                    border-b-2 
+                    focus:text-gray-500 focus:outline-none focus:border-gray-200"
+                                required />
+
+                            <label className="block text-sm font-bold text-black uppercase pt-2">Email</label>
+                            <input id="email" type="email" name="email" placeholder="Email Address"
+                                className="block w-full border-2 border-gray-300 rounded-md py-3 px-1 mt-2 
+                    text-gray-800 appearance-none 
+                    border-b-2 
+                    focus:text-gray-500 focus:outline-none focus:border-gray-200"
+                                required />
+
+                            <label className="block mt-2 text-sm font-bold text-black uppercase " >Password</label>
+                            <input id="password" type="password" name="password" placeholder="Password"
+                                className="block border-2 border-gray-300 rounded-md w-full py-3 px-1 mt-2 mb-4
+                    text-gray-800 appearance-none 
+                    border-b-2 
+                    focus:text-gray-500 focus:outline-none focus:border-gray-200"
+                                required />
+
+                            <Link to="/home"><span className=" text-blue-500"><button type="submit"
+                                className="w-full py-3 mt-10 bg-gray-800 rounded-sm
+                    font-medium text-white uppercase
+                    focus:outline-none hover:bg-gray-700 hover:shadow-none">
+                                Signup
+                            </button></span> </Link>
+
+                            <div className="sm:flex sm:flex-wrap mt-8 sm:mb-4 text-md text-center">
+                                <Link to="/"><span className=" flex-2 underline ">login</span> </Link>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-
-            
-
-
-
-
-        </>
     );
 };
 SignupPage.defaultProps = {

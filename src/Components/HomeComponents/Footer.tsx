@@ -98,18 +98,7 @@ return (
 Copyright © 2021 All rights reserved  
 </div>
 
-</div>
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+</div> 
  </>
 );
 };
