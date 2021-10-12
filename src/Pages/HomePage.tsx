@@ -8,7 +8,9 @@ const HomePage: FC<Props> = (props) => {
             <div>This is Home Page</div>
             <Link to="/"><span className=" text-blue-500"><button>Logout</button></span> </Link>
             <br></br>
-            <Link to="/search"><span className=" text-blue-500"><button>Search here</button></span> </Link>
+            <Link to="/search"><span className=" text-blue-600 border-2 border-gray-600"><button>Search here</button></span> </Link>
+            <br></br>
+            <Link to="/searchResult"><span className=" text-blue-600 border-2 border-gray-600"><button>Search result page here</button></span> </Link>
         </>
     );
 };
