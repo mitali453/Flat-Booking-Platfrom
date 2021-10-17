@@ -8,11 +8,6 @@ interface Props {
 const HomePage: FC<Props> = (props) => {
     return (
         <div className="scroll-none">
-
-
-  
-
-
             <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/2 flex flex-col sm:flex-row">
                     <div className="opacity-100 hover:opacity-80 group p-2 pl-0 pr-0">
@@ -102,7 +97,7 @@ const HomePage: FC<Props> = (props) => {
                 </div>
             </div>
 
-        
+
             <div className="h-56 w-full bg-gray-100">
                 <h1 className="text-yellow text-sm text-center pt-12">AASHIYANA APARTMENTS</h1>
                 <h1 className=" text-3xl font-serif p-6 text-center"> New Arrivals - Master's Apartments</h1>
@@ -164,7 +159,7 @@ const HomePage: FC<Props> = (props) => {
                 </div>
             </div>
 
-           
+
             <div className="h-56 w-full bg-gray-100">
                 <h1 className="text-yellow text-sm text-center pt-12">AASHIYANA APARTMENTS</h1>
                 <h1 className=" text-3xl font-serif p-6 text-center"> New Arrivals - Master's Apartments</h1>
