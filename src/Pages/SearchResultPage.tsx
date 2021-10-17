@@ -1,4 +1,8 @@
 import { FC, memo } from "react";
+import Card from "../Components/HomeComponents/Card";
+import Card2 from "../Components/HomeComponents/Card2";
+import Overview from "../Components/HomeComponents/Overview";
+import Home from "./DashBoardPage";
 
 interface Props {
 }
@@ -59,6 +63,10 @@ const SearchResultPage: FC<Props> = (props) => {
                     </div>
                 </div>
             </header>
+
+            <Card></Card>
+            <Card2></Card2>
+            <Overview></Overview>
 
             <div className="pb-64 ">
 
@@ -123,6 +131,7 @@ const SearchResultPage: FC<Props> = (props) => {
                 </div>
 
             </div>
+
 
         </>
     );

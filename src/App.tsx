@@ -1,7 +1,6 @@
 import React from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
-import Home from './Pages/Home';
-import HomePage from './Pages/HomePage';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import DashBoardPage from './Pages/DashBoardPage';
 import LoginPage from './Pages/LoginPage';
 import SearchPage from './Pages/SearchPage';
 import SearchResultPage from './Pages/SearchResultPage';
@@ -16,9 +15,6 @@ function App() {
                     <Route exact path="/">
                         <WelcomePage></WelcomePage>
                     </Route>
-                    <Route path="/home">
-                        <HomePage></HomePage>
-                    </Route>
                     <Route path="/signup">
                         <SignupPage></SignupPage>
                     </Route>
@@ -31,8 +27,8 @@ function App() {
                     <Route path="/searchResult">
                         <SearchResultPage></SearchResultPage>
                     </Route>
-                    <Route path="/H">
-                        <Home></Home>
+                    <Route path="/DashBoard">
+                        <DashBoardPage></DashBoardPage>
                     </Route>
                 </Switch>
             </BrowserRouter>
