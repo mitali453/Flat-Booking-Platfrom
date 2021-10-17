@@ -9,12 +9,7 @@ interface Props {
 const HomePage: FC<Props> = (props) => {
     return (
         <div className="scroll-none">
-
-
-  
-
-
-            <div className="flex flex-col md:flex-row">
+             <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/2 flex flex-col sm:flex-row">
                     <div className="opacity-100 hover:opacity-80 group p-2 pl-0 pr-0">
                         <h1 className=" absolute  transform translate-x-20 translate-y-56 animate-spin opacity-0 group-hover:opacity-100 font-bold text-2xl px-2 py-1 text-white border-2 border-double border-white flex  items-center" >Rooms<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
