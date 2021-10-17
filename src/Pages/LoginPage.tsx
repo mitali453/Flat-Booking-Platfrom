@@ -32,7 +32,7 @@ const LoginPage: FC<Props> = (props) => {
                     border-b-2 
                     focus:text-gray-500 focus:outline-none focus:border-gray-200"
                                 required />
-                            <Link to="/home"><span className=" text-blue-500"><button type="submit"
+                            <Link to="/dashboard"><span className=" text-blue-500"><button type="submit"
                                 className="w-full py-3 mt-10 bg-gray-800 rounded-sm
                     font-medium text-white uppercase
                     focus:outline-none hover:bg-gray-700 hover:shadow-none">
