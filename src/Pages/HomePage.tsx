@@ -2,12 +2,14 @@ import { FC, memo } from "react";
 import RoomCards from "../Components/HomeComponents/RoomCards";
 import Img from "../Components/HomeComponents/Img";
 import Footer from "../Components/HomeComponents/Footer";
+import Insta from "../Components/HomeComponents/Insta";
 interface Props {
 
 }
 const HomePage: FC<Props> = (props) => {
     return (
         <div className="scroll-none">
+             <div className="flex flex-col md:flex-row">
             <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/2 flex flex-col sm:flex-row">
                     <div className="opacity-100 hover:opacity-80 group p-2 pl-0 pr-0">
@@ -161,14 +163,21 @@ const HomePage: FC<Props> = (props) => {
 
 
             <div className="h-56 w-full bg-gray-100">
-                <h1 className="text-yellow text-sm text-center pt-12">AASHIYANA APARTMENTS</h1>
-                <h1 className=" text-3xl font-serif p-6 text-center"> New Arrivals - Master's Apartments</h1>
+                <h1 className="text-yellow text-sm text-center pt-12"></h1>
+                <h1 className=" text-3xl font-serif p-6 text-center"> </h1>
 
             </div>
 
 
 
             <iframe className="h-screen w-screen" src="https://www.youtube.com/embed/mb8s4Hsqzyw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <div className="h-48 w-full ">
+                <h1 className="text-yellow text-sm text-center pt-12">Photos</h1>
+                <h1 className=" text-3xl font-serif p-3 text-center"> Instagram</h1>
+
+            </div>
+            <Insta></Insta>
+
             <Footer></Footer>
 
 
@@ -179,7 +188,7 @@ const HomePage: FC<Props> = (props) => {
 
 
 
-
+</div>
         </div>
     );
 };
