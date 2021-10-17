@@ -5,7 +5,7 @@ interface Props{
 const Img: FC<Props> = (props) =>{
 return (
  <>
- <div><img  className={"h-72 "} src={props.image} alt="" /></div>
+ <div><img  className={"md:h-72  "} src={props.image} alt="" /></div>
  </>
 );
 };
