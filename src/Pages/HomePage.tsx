@@ -9,7 +9,7 @@ interface Props {
 const HomePage: FC<Props> = (props) => {
     return (
         <div className="scroll-none">
-             <div className="flex flex-col md:flex-row">
+
             <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/2 flex flex-col sm:flex-row">
                     <div className="opacity-100 hover:opacity-80 group p-2 pl-0 pr-0">
@@ -188,8 +188,8 @@ const HomePage: FC<Props> = (props) => {
 
 
 
-</div>
         </div>
+
     );
 };
 HomePage.defaultProps = {
