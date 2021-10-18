@@ -3,6 +3,11 @@ import RoomCards from "../Components/HomeComponents/RoomCards";
 import Img from "../Components/HomeComponents/Img";
 import Footer from "../Components/HomeComponents/Footer";
 import Insta from "../Components/HomeComponents/Insta";
+import FeatureApart from "../Components/SearchComponents/FeatureApart";
+import Food from "../../Images/SearchFood.png";
+import Shop from "../../Images/SearchShop.png";
+import Travel from "../../Images/SearchTravel.png";
+import OurFeatures from "../Components/SearchComponents/OurFeatures";
 interface Props {
 
 }
@@ -161,9 +166,8 @@ const HomePage: FC<Props> = (props) => {
             </div>
 
 
-            <div className="h-56 w-full bg-gray-100">
-                <h1 className="text-yellow text-sm text-center pt-12"></h1>
-                <h1 className=" text-3xl font-serif p-6 text-center"> </h1>
+            
+            <div  className="h-16 bg-white">
 
             </div>
 
@@ -178,6 +182,7 @@ const HomePage: FC<Props> = (props) => {
             <Insta></Insta>
             <Footer></Footer>
         </div>
+
     );
 };
 HomePage.defaultProps = {
