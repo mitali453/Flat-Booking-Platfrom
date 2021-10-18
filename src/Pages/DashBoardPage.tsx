@@ -1,9 +1,6 @@
 import { FC, memo } from "react";
 import { Link } from "react-router-dom";
-import Card from "../Components/HomeComponents/Card";
-import Card2 from "../Components/HomeComponents/Card2";
-import Overview from "../Components/HomeComponents/Overview";
-import HomePage from "./HomePage";
+
 interface Props {
 }
 const DashBoardPage: FC<Props> = (props) => {
