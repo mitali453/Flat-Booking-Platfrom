@@ -7,28 +7,41 @@ const SearchFlat: FC<Props> = (props) => {
       <div className="text-xl text-center py-4 text-black">OVER 36,500+ ACTIVE LISTINGS</div>
       <div className="text-4xl font-bold text-center py-4 text-black">Find Nearby Places & Things</div>
       <div className="flex justify-center pt-8 ">
-        <div className="flex  relative ">
-          <svg className="w-2 h-9 absolute top-0 right-0 m-4 pointer-events-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 412 232"><path d="M206 171.144L42.678 7.822c-9.763-9.763-25.592-9.763-35.355 0-9.763 9.764-9.763 25.592 0 35.355l181 181c4.88 4.882 11.279 7.323 17.677 7.323s12.796-2.441 17.678-7.322l181-181c9.763-9.764 9.763-25.592 0-35.355-9.763-9.763-25.592-9.763-35.355 0L206 171.144z" fill="#000000" fill-rule="nonzero" /></svg>
+
+        <div className="flex relative">
           <select className="border-2 border-gray-500 rounded-md text-black font-semibold h-16 px-20 bg-white hover:border-black focus:outline-none appearance-none">
-            <option>ALL AREAS</option>
-            <option>Modern City</option>
-            <option>City</option>
-            <option>Town</option>
-            <option>Village</option>
-            <option>Outside</option>
+            <option>Indiana</option>
+            <option>Michigan</option>
+            <option>Ohio</option>
           </select>
+          <div className="pointer-events-none bg-gray-300 absolute right-0 h-14 w-10">
+            <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
+          </div>
         </div>
 
-        <div className="flex  relative ">
-          <svg className="w-2 h-9 absolute top-0 right-0 m-4 pointer-events-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 412 232"><path d="M206 171.144L42.678 7.822c-9.763-9.763-25.592-9.763-35.355 0-9.763 9.764-9.763 25.592 0 35.355l181 181c4.88 4.882 11.279 7.323 17.677 7.323s12.796-2.441 17.678-7.322l181-181c9.763-9.764 9.763-25.592 0-35.355-9.763-9.763-25.592-9.763-35.355 0L206 171.144z" fill="#000000" fill-rule="nonzero" /></svg>
-          <select className="border-gray-500 border-2 rounded-md text-black font-semibold h-16 px-20 bg-white hover:border-black focus:outline-none appearance-none">
-            <option>PRICE RANGE</option>
-            <option>2000 - 4000</option>
-            <option>4000 - 6000</option>
-            <option>6000 - 1000</option>
-            <option>10000 - 15000</option>
-            <option>15000 - 20000</option>
+
+
+        <div className="flex relative">
+          <select className="border-2 border-gray-500 rounded-md text-black font-semibold h-16 px-20 bg-white hover:border-black focus:outline-none appearance-none">
+            <option>Indiana</option>
+            <option>Michigan</option>
+            <option>Ohio</option>
           </select>
+          <div className="pointer-events-none bg-gray-300 absolute right-0 h-14 w-10">
+            <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
+          </div>
+        </div>
+
+
+        <div className="flex relative">
+          <select className="border-2 border-gray-500 rounded-md text-black font-semibold h-16 px-20 bg-white hover:border-black focus:outline-none appearance-none">
+            <option>Indiana</option>
+            <option>Michigan</option>
+            <option>Ohio</option>
+          </select>
+          <div className="pointer-events-none bg-gray-300 absolute right-0 h-14 w-10">
+            <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
+          </div>
         </div>
 
         <div className="flex p-4 w-72 space-x-4 border-2 border-gray-500 rounded-md text-black font-semibold h-16 px-20 bg-white hover:border-black focus:outline-none appearance-none">
