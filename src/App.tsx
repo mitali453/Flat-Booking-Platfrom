@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Navbar from './Components/HomeComponents/Navbar';
 import UserReview1 from './Components/SearchComponents/UserReview1';
 import DashBoardPage from './Pages/DashBoardPage';
 import LoginPage from './Pages/LoginPage';
@@ -16,6 +17,10 @@ function App() {
                     <Route exact path="/">
                         <WelcomePage></WelcomePage>
                     </Route>
+                    <Route path="/navbar">
+                       <Navbar></Navbar>
+                    </Route>
+
                     <Route path="/signup">
                         <SignupPage></SignupPage>
                     </Route>
