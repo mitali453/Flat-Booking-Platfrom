@@ -181,8 +181,25 @@ const HomePage: FC<Props> = (props) => {
             </div>
             <Insta></Insta>
             <Footer></Footer>
+<<<<<<< Updated upstream
         </div>
+<<<<<<< Updated upstream
 
+=======
+=======
+
+
+
+
+
+
+
+
+
+</div>
+        
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     );
 };
 HomePage.defaultProps = {

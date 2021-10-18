@@ -5,7 +5,9 @@ import Food from "../../Images/SearchFood.png";
 import Travel from "../../Images/SearchTravel.png";
 import Shop from "../../Images/SearchShop.png";
 
-interface Props { }
+interface Props {
+
+ }
 const PopularCategories: FC<Props> = (props) => {
     return (
         <div className="pb-48">
