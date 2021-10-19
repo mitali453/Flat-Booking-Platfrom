@@ -1,7 +1,8 @@
 import { FC, memo } from "react";
-import Card from "../Components/SeaPalaceComponents/SpecialFaciCard";
+import SpecialFaciCard from "../Components/SeaPalaceComponents/SpecialFaciCard";
 import ExRoomCard from "../Components/SeaPalaceComponents/ExRoomCard";
 import SeaPalaceHeader from "../Components/SeaPalaceComponents/SeaPalaceHeader";
+import UserReview1 from "../Components/SearchComponents/UserReview1";
 
 
 interface Props {
@@ -16,7 +17,17 @@ const SearchResultPage: FC<Props> = (props) => {
                 <ExRoomCard></ExRoomCard>
                 <ExRoomCard></ExRoomCard>
             </div>
-            <Card></Card>
+
+            <div className="md:mx-24 pt-10">
+                <SpecialFaciCard></SpecialFaciCard>
+            </div>
+
+
+            <div className="md:mx-24 pt-10 pb-20">
+                <UserReview1></UserReview1>
+            </div>
+
+
 
         </>
     );
