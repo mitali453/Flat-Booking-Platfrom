@@ -1,10 +1,10 @@
 import { FC, memo } from "react";
 interface Props {
 }
-const Card: FC<Props> = (props) => {
+const SpecialFaciCard: FC<Props> = (props) => {
     return (
         <>
-            <div className="pt-10 md:mx-24 ">
+            <div >
                 <div className="flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-3 lg:pt-2" >
 
                     <div className="lg:w-1/3 p-10 bg-gray-200 h-56 lg:h-72 group hover:bg-primary overflow-y-auto md:overflow-visible">
@@ -41,6 +41,6 @@ const Card: FC<Props> = (props) => {
         </>
     );
 };
-Card.defaultProps = {
+SpecialFaciCard.defaultProps = {
 }
-export default memo(Card);
+export default memo(SpecialFaciCard);

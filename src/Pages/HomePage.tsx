@@ -164,15 +164,8 @@ const HomePage: FC<Props> = (props) => {
                     </div>
                 </div>
             </div>
-
-
-            
-            <div  className="h-16 bg-white">
-
+            <div className="h-16 bg-white">
             </div>
-
-
-
             <iframe className="h-screen w-screen" src="https://www.youtube.com/embed/mb8s4Hsqzyw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             <div className="h-48 w-full ">
                 <h1 className="text-yellow text-sm text-center pt-12">Photos</h1>
@@ -181,25 +174,7 @@ const HomePage: FC<Props> = (props) => {
             </div>
             <Insta></Insta>
             <Footer></Footer>
-<<<<<<< Updated upstream
         </div>
-<<<<<<< Updated upstream
-
-=======
-=======
-
-
-
-
-
-
-
-
-
-</div>
-        
->>>>>>> Stashed changes
->>>>>>> Stashed changes
     );
 };
 HomePage.defaultProps = {
