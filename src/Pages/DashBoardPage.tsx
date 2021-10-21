@@ -6,7 +6,7 @@ interface Props {
 const DashBoardPage: FC<Props> = (props) => {
     return (
         <>
-            <div>This is Dashboard Page</div>
+            <div>Dashboard page</div>
             <br />
             <Link to="/search"><span className=" text-blue-500"><button>Plotlist</button></span> </Link>
             <br />
