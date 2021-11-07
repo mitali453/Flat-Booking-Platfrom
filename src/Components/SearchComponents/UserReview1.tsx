@@ -1,42 +1,3 @@
-// import {FC, memo} from "react";
-// interface Props{
-//     image:string;
-//     para:string;
-//     name:string;
-//     designation:string;
-// }
-// const Guestlove: FC<Props> = (props) =>{
-// return (
-//  <>
-//  <div>
-//  <div className="relative pt-20">
-
-//  <div className="bg-gray-100 hover:bg-white hover:shadow-2xl h-96">
-//      <div className="flex items-center">
-//          <div className=""><img className="rounded-full h-40 w-40 pt-3 pl-3" src={props.image} alt="" /></div>
-//          <div className="pl-10 flex items-center flex-col">
-//              <p className="text-gray-700">{props.para}</p>
-//              <div><h1 className="font-serif text-2xl">{props.name}</h1>
-//              <h3 className="text-gray-500 text-xs">{props.designation}</h3></div>
-//          </div>
-//      </div>
-//  </div>
-
-
-//  </div>
-
-//  <div className="h-96 bg-red-300 inset-x-0 bottom-0 transform -rotate-2 top-0 left-0 z-9">
-
-//  </div>
-//  </div>
-
-//  </>
-// );
-// };
-// Guestlove.defaultProps={
-// }
-// export default memo(Guestlove);
-
 import { FC, memo } from "react";
 interface Props {
 }
@@ -44,9 +5,9 @@ const UserReview1: FC<Props> = (props) => {
     return (
         <>
 
-            <div className="flex space-x-3.5 ">
+            <div className="flex flex-col md:flex-row space-y-2 lg:space-y-0 lg:space-x-3 lg:pt-2 space-x-3.5 ">
 
-                <div className="flex  relative bg-gray-200 p-5 hover:bg-gray-100 hover:shadow-sm w-1/3">
+                <div className="flex  relative bg-gray-200 p-5 hover:bg-gray-100 hover:shadow-sm w-full sm:w-1/3">
                     <div>
                         {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeK4UCa18Md7KCGOx9DAd_AIjKh-HQfKaxNg&usqp=CAU" alt="" className="rounded-full h-20 w-40 " /> */}
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-24 w-24 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
@@ -63,7 +24,7 @@ const UserReview1: FC<Props> = (props) => {
                     </svg>
                 </div>
 
-                <div className="flex bg-gray-200 p-5 relative hover:bg-gray-100 hover:shadow-sm w-1/3">
+                <div className="flex bg-gray-200 p-5 w-full relative hover:bg-gray-100 hover:shadow-sm sm:w-1/3">
                     <div>
                         {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdq5l6DB_2HlbYcUFrEXGfA1jzXfSWuRtuvw&usqp=CAU" alt="" className="rounded-full h-20 w-40 " /> */}
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-24 w-24 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
@@ -81,7 +42,7 @@ const UserReview1: FC<Props> = (props) => {
                     </svg>
                 </div>
 
-                <div className="flex bg-gray-200 p-5 relative hover:bg-gray-100 hover:shadow-sm w-1/3">
+                <div className="flex bg-gray-200 p-5 relative hover:bg-gray-100 hover:shadow-sm w-full sm:w-1/3">
                     <div>
                         {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmMUS6nEhoe8Ox6CVm8SebAxaT-vXWymTehQ&usqp=CAU" alt="" className="rounded-full h-20 w-40 " /> */}
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-24 w-24 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
