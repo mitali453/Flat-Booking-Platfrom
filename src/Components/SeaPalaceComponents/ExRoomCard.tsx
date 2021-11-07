@@ -4,8 +4,8 @@ interface Props {
 const ExRoomCard: FC<Props> = (props) => {
     return (
         <>
-            <div className="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-78 ">
-                <div className="flex  flex-col min-w-0 break-words  w-full mb-6 shadow-lg rounded-lg bg-white">
+            <div className="lg:w-1/3 px-12 md:px-4 mr-auto ml-auto -mt-78 ">
+                <div className="flex  flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white">
                     <div className="  relative  ">
                         <img className="w-fullalign-middle rounded-t-lg" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="..." />
                         <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" className="absolute bottom-0">
@@ -17,7 +17,7 @@ const ExRoomCard: FC<Props> = (props) => {
                             CLASSIC BEDROOM
                         </h4>
                         <p className="text-md font-light  px-8 pb-8 mt-2 text-black">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi debitis aliquid quisquam fugiat. Qui dolores aliquam laboriosam error totam molestias architecto, ea voluptatem, dolor ipsa consectetur nisi! Impedit quasi eius unde! Quasi quo, inventore enim consequuntur doloremque iusto tempore cum a dolores ad exercitationem mollitia ipsam? Illo explicabo voluptatum harum s deserunt.
+                            Lorem ipsum dolor sit amet consectetur adipisicingea voluptatem, unde! Quasi quo, inventore enim consequuntur doloremque iusto tempore cum a dolores ad exercitationem mollitia ipsam? Illo expl deserunt.
                         </p>
                     </blockquote>
                 </div>
