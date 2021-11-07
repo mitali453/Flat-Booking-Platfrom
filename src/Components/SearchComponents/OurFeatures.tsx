@@ -8,9 +8,9 @@ import FeatureApart from "./FeatureApart";
 interface Props {
 
 }
-const OurFeauture: FC<Props> = (props) => {
+const OurFeautures: FC<Props> = (props) => {
     return (
-        <div className="flex justify-around">
+        <div className="flex justify-around pt-10 pb-10">
             <div>
                 <FeatureApart image={Apart} ></FeatureApart>
                 <h1 className="p-4">FLAT</h1>
@@ -30,6 +30,6 @@ const OurFeauture: FC<Props> = (props) => {
         </div>
     );
 };
-OurFeauture.defaultProps = {
+OurFeautures.defaultProps = {
 }
-export default memo(OurFeauture);
+export default memo(OurFeautures);
