@@ -4,12 +4,12 @@ interface Props {
 const SeaPalaceHeader: FC<Props> = (props) => {
     return (
         <>
-            <header>
+            <header className="">
                 <nav className="bg-white shadow dark:bg-gray-800">
                     <div className="container px-6 py-4 mx-auto">
                         <div className="flex items-center justify-between">
-                            <div className="classNameflex">
-                                <div>
+                            <div className="flex">
+                                <div className=" invisible sm:visible absolute sm:relative">
                                     <img className="h-12 w-28" src="https://i.pinimg.com/736x/71/b3/e4/71b3e4159892bb319292ab3b76900930.jpg" alt="" />
                                 </div>
                                 <div className="text-xl font-semibold text-gray-700 px-6">
