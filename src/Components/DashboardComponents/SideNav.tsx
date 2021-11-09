@@ -7,7 +7,7 @@ const SideNav: FC<Props> = ({ Open }) => {
     return (
         <div className={Open ? "h-screen sticky top-0 visible" : "invisible absolute "}>
             <div className="min-h-screen flex flex-row ">
-                <div className="flex flex-col w-56 bg-primary  rounded-r-3xl overflow-hidden">
+                <div className="flex flex-col w-56 bg-gray-600 rounded-r-3xl overflow-hidden">
                     <div className="flex pt-5">
                         <img className="h-40 w-40 rounded-full mx-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToqEZo8cWlBOBDhGuIZaZU8Y9EKOfSOMIHGg&usqp=CAU" alt="" />
                     </div>
