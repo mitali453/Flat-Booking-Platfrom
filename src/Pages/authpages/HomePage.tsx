@@ -3,6 +3,8 @@ import RoomCards from "../../Components/HomeComponents/RoomCards";
 import Img from "../../Components/HomeComponents/Img";
 import Footer from "../../Components/HomeComponents/Footer";
 import Insta from "../../Components/HomeComponents/Insta";
+
+
 interface Props {
 
 }
@@ -11,13 +13,13 @@ const HomePage: FC<Props> = (props) => {
         <div className="scroll-none">
             <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/2 flex flex-col sm:flex-row">
-                    <div className="opacity-100 hover:opacity-80 group p-2 pl-0 pr-0">
+                    <div className="opacity-100 hover:opacity-80 group p-2 ">
                         <h1 className=" absolute  transform translate-x-20 translate-y-56 animate-spin opacity-0 group-hover:opacity-100 font-bold text-2xl px-2 py-1 text-white border-2 border-double border-white flex  items-center" >Rooms<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg> </h1>
                         <img className=" h-72 w-full" src="https://images.unsplash.com/photo-1566195992011-5f6b21e539aa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWwlMjByb29tfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="" />
                     </div>
-                    <div className=" opacity-100 hover:opacity-80 group p-2 pr-0">
+                    <div className=" opacity-100 hover:opacity-80 group p-2">
                         <h1 className=" absolute  transform translate-x-8 translate-y-56 animate-spin opacity-0 group-hover:opacity-100 font-bold text-2xl px-2 py-1 text-white border-2 border-double border-white flex  items-center" >Swimming Pool <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg> </h1>
@@ -26,13 +28,13 @@ const HomePage: FC<Props> = (props) => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row md:w-1/2 ">
-                    <div className="opacity-100 hover:opacity-80 group p-2 pr-0">
+                    <div className="opacity-100 hover:opacity-80 group p-2 ">
                         <h1 className=" absolute  transform translate-x-24 translate-y-56 animate-spin opacity-0 group-hover:opacity-100 font-bold text-2xl px-2 py-1 text-white border-2 border-double border-white flex  items-center" >Gardening <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg></h1>
                         <img className="h-72 w-full" src="https://worstroom.com/wp-content/uploads/2019/08/apartment-balcony-garden-around-benches.jpg" alt="" />
                     </div>
-                    <div className="opacity-100 hover:opacity-80 group p-2 pr-0">
+                    <div className="opacity-100 hover:opacity-80 group p-2">
                         <h1 className=" absolute  transform translate-x-24 translate-y-56 animate-spin opacity-0 group-hover:opacity-100 font-bold text-2xl px-2 py-1 text-white border-2 border-double border-white flex  items-center" >Gym <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg> </h1>
@@ -135,10 +137,103 @@ const HomePage: FC<Props> = (props) => {
                 </div>
             </div>
 
-            <div className="h-screen w-full bg-gray-100">
+            <div className=" w-full bg-gray-100  ">
+                <div className="p-7 pt-0">
+            <div className="flex space-x-1 group-hover:text-white group-hover:border-white justify-center pt-6 md:pt-16 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-5 text-yellow group-hover:text-white" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-5 text-yellow group-hover:text-white" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-5 text-yellow group-hover:text-white" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-5 text-yellow group-hover:text-white" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-5 text-yellow group-hover:text-white" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                </div>
+                <h1 className=" text-3xl font-serif p-6 pt-2 text-center">Our Satisfied Guest Says</h1>
+                <p className="lg:px-72 text-center text-sm">We had an amazing with Aashiyana. They provide a wide variety of flats and services. The flat was excellent beautified and had an astonishing perspective on the falls. Staff was incredibly kind and supportive. The Milestones Restaurant had unimaginable food and exceptionally aware hosts and servers. We will keep on remaining at the Aashiyana on our future requiremnet.</p>
+                </div>
+                </div>
 
-
+            
+                <div className="flex justify-center">
+                <div className="lg:w-1/3 px-12 md:px-4 mr-auto ml-auto -mt-78 ">
+                <div className="flex  flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white">
+                    <div className="  relative  ">
+                        <img className="w-40 mx-auto align-middle rounded-t-lg h-40 " src="https://yourkidstable.com/wp-content/uploads/2020/02/Circle-Profile-Pic-300x293.png" alt="..." />
+                        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" className="absolute bottom-0">
+                            <polygon points="-30,95 583,95 583,65" className="text-white fill-current"></polygon>
+                        </svg>
+                    </div>
+                    <blockquote className="mb-2 bg-gray-100 ">
+                        <h4 className="text-xl font-bold px-8 pt-8 text-black text-center">
+                            JENNY D'SOUZA
+                        </h4>
+                        <div className="flex space-x-1 group-hover:text-white group-hover:border-white justify-center ">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-5 text-yellow group-hover:text-white" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-5 text-yellow group-hover:text-white" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-5 text-yellow group-hover:text-white" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-5 text-yellow group-hover:text-white" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-5 text-yellow group-hover:text-white" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                </div>
+                        <p className="text-md font-light px-0 md:px-8  pb-0 md:pb-8 mt-2 text-black">
+                            Lorem ipsum dolor sit amet consectetur adipisicingea voluptatem, unde! Quasi quo, inventore enim consequuntur doloremque iusto tempore cum a dolores ad exercitationem mollitia ipsam? Illo expl deserunt.
+                        </p>
+                    </blockquote>
+                </div>
+                
             </div>
+            <div className="lg:w-1/3 px-12 md:px-4 mr-auto ml-auto -mt-78 invisible absolute md:visible md:relative">
+                <div className="flex  flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white">
+                    <div className="  relative  ">
+                        <img className="w-48 mx-auto align-middle rounded-t-lg h-40 " src="https://www.vippng.com/png/detail/341-3415770_the-event-is-free-to-register-visit-http.png" alt="..." />
+                        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" className="absolute bottom-0">
+                            <polygon points="-30,95 583,95 583,65" className="text-white fill-current"></polygon>
+                        </svg>
+                    </div>
+                    <blockquote className="mb-2 bg-gray-100 ">
+                        <h4 className="text-xl font-bold px-8 pt-8 text-black text-center">
+                            JERKLEEY BONUS
+                        </h4>
+                        <div className="flex space-x-1 group-hover:text-white group-hover:border-white justify-center ">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-5 text-yellow group-hover:text-white" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-5 text-yellow group-hover:text-white" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-5 text-yellow group-hover:text-white" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-5 text-yellow group-hover:text-white" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-5 text-white group-hover:text-white" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                </div>
+                        <p className="text-base font-light  px-8 pb-8 mt-2 text-black">
+                            Lorem ipsum dolor sit amet consectetur adipisicingea voluptatem, unde! Quasi quo, inventore enim consequuntur doloremque iusto tempore cum a dolores ad exercitationem mollitia ipsam? Illo expl deserunt.
+                        </p>
+                    </blockquote>
+                </div>
+                </div>
+            
+                
+                    
+                </div>
+
+        
 
             <div className="p-10">
                 <div className=" flex flex-col lg:flex-row">
