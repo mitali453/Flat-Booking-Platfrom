@@ -7,7 +7,7 @@ import Shop from "../../Images/SearchShop.png";
 
 interface Props {
 
- }
+}
 const PopularCategories: FC<Props> = (props) => {
     return (
         <div className="pb-48">
@@ -15,7 +15,7 @@ const PopularCategories: FC<Props> = (props) => {
                 <div className="text-4xl font-bold py-4 text-black">Popular Categories</div>
                 <div className="text-xl py-4 pb-8 text-black">CHECK THEM OUT</div>
             </div>
-            <div className="flex px-40">
+            <div className="flex">
                 <div className="bg-black text-white w-64">
                     <div className="flex justify-center border-black border-2 hover:border-black p-4 hover:bg-white hover:text-black ">
                         <div><FeatureApart image={Apart}></FeatureApart></div>
@@ -35,7 +35,7 @@ const PopularCategories: FC<Props> = (props) => {
                     </div>
                 </div>
                 <div className="bg-gray-700 text-white w-full">
-                    ALL THE DETAILS WILL BE HERE ....!!!
+                    ALL THE DETAILS WILL BE HERE .....!!!
                 </div>
             </div>
         </div>

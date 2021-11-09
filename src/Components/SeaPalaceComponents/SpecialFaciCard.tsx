@@ -17,6 +17,7 @@ const SpecialFaciCard: FC<Props> = (props) => {
                         <p className="font-sans text-gray-500 group-hover:text-white">There is so much power in being able to look comfortable in a conference room, and not sure dudes in suits are used to seeing people do that . Why not practice !</p>
                     </div>
 
+
                     <div className="lg:w-1/3 p-10 bg-gray-200 h-56 lg:h-72 hover:bg-primary group overflow-y-auto md:overflow-visible">
                         <div className="flex pb-5 group-hover:text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-yellow group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
