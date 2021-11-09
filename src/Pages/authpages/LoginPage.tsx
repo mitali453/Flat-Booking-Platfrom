@@ -6,10 +6,10 @@ interface Props {
 const LoginPage: FC<Props> = (props) => {
     return (
         <div>
-            <div className="flex flex-col h-screen bg-gray-300">
+            <div className="flex flex-col h-full bg-gray-300">
                 <div className="grid place-items-center mx-2 my-20  sm:my-auto">
 
-                    <div className="w-11/12 p-12 border-double border-t-2 border-b-2 border-gray-600 bg-yellow-500 sm:w-8/12 md:w-6/12 lg:w-5/12 2xl:w-4/12
+                    <div className=" h-full w-11/12 p-12 border-double border-t-2 border-b-2 border-gray-600 bg-primary sm:w-8/12 md:w-6/12 lg:w-5/12 2xl:w-4/12
             px-6 py-6 sm:px-10 sm:py-6 
              rounded-lg shadow-md lg:shadow-lg">
                         <div className="flex">
@@ -40,16 +40,16 @@ const LoginPage: FC<Props> = (props) => {
                             </button></span> </Link>
 
 
-                            <div className="sm:flex sm:flex-wrap mt-8 sm:mb-4 text-md text-center">
-                                <a href="forgot-password" className="flex-2 underline">
+                            <div className=" mt-3 sm:mb-4 text-md text-center">
+                            <Link to="/signup"><span className=" flex-2 underline ">Haven't any account? Signup</span> </Link>
+                                
+
+                                
+                                
+                            </div>
+                            <a href="forgot-password" className="flex-2 underline text-sm flex justify-center" >
                                     forgot password?
                                 </a>
-
-                                <p className="flex-1 text-gray-500 text-md mx-4 my-1 sm:my-auto">
-                                    or
-                                </p>
-                                <Link to="/signup"><span className=" flex-2 underline ">sign up</span> </Link>
-                            </div>
                         </form>
                     </div>
                 </div>
