@@ -32,7 +32,7 @@ const LoginPage: FC<Props> = (props) => {
                     border-b-2 
                     focus:text-gray-500 focus:outline-none focus:border-gray-200"
                                 required />
-                            <Link to="/dashboard"><span className=" text-blue-500"><button type="submit"
+                            <Link to="/search"><span className=" text-blue-500"><button type="submit"
                                 className="w-full py-3 mt-10 bg-gray-800 rounded-sm
                     font-medium text-white uppercase
                     focus:outline-none hover:bg-gray-700 hover:shadow-none">
@@ -41,15 +41,15 @@ const LoginPage: FC<Props> = (props) => {
 
 
                             <div className=" mt-3 sm:mb-4 text-md text-center">
-                            <Link to="/signup"><span className=" flex-2 underline ">Haven't any account? Signup</span> </Link>
-                                
+                                <Link to="/signup"><span className=" flex-2 underline ">Haven't any account? Signup</span> </Link>
 
-                                
-                                
+
+
+
                             </div>
                             <a href="forgot-password" className="flex-2 underline text-sm flex justify-center" >
-                                    forgot password?
-                                </a>
+                                forgot password?
+                            </a>
                         </form>
                     </div>
                 </div>
