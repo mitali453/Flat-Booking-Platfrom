@@ -4,9 +4,11 @@ import { BrowserRouter } from "react-router-dom";
 import NavToggle from "../../Components/DashboardComponents/NavToggle";
 import SideNav from "../../Components/DashboardComponents/SideNav";
 import DashBoardPage from "./DashBoardPage";
+import FormSeller from "./FormSeller";
 import ProfilePage from "./ProfilePage";
 import SearchPage from "./SearchPage";
 import SearchResultPage from "./SearchResultPage";
+import UploadApartPage from "./UploadApartPage";
 interface Props {
 }
 const AppContainer: FC<Props> = (props) => {
@@ -29,6 +31,12 @@ const AppContainer: FC<Props> = (props) => {
                         </Route>
                         <Route path="/profile">
                             <ProfilePage></ProfilePage>
+                        </Route>
+                        <Route path="/formseller">
+                            <FormSeller></FormSeller>
+                        </Route>
+                        <Route path="/uploadapart">
+                            <UploadApartPage></UploadApartPage>
                         </Route>
                     </Switch>
                 </div>
