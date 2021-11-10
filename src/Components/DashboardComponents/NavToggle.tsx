@@ -1,4 +1,5 @@
 import { FC, memo, useState } from "react";
+import { Link } from "react-router-dom";
 interface Props {
     sideNavToggle: () => void;
 }
@@ -15,9 +16,11 @@ const NavToggle: FC<Props> = ({ sideNavToggle }) => {
                     <a className="flex title-font font-medium mx-auto">
                         <img className="h-14 w-52 absolute md:relative md:visible invisible" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToqEZo8cWlBOBDhGuIZaZU8Y9EKOfSOMIHGg&usqp=CAU"
                             alt="logo" />
-
                         <span className="my-auto pl-3 text-xl">ASHIYANA REAL ESTATE</span>
                     </a>
+                    <div className="pt-3">
+                        <Link to="/formseller"><span className="bg-gray-400 text-white p-1 font-mono text-lg border border-white rounded-md"><button>Become a seller</button></span> </Link>
+                    </div>
                 </div>
             </div></>
     );
