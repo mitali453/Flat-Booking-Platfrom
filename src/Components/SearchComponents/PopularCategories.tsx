@@ -35,9 +35,22 @@ const PopularCategories: FC<Props> = (props) => {
                     </div>
                 </div>
                 <div className="bg-gray-700 invisible text-white lg:w-full lg:visible">
-                    {/* <img src="./src/Images/bg-2.png" alt="" /> */}
-                    <img className="h-80 mx-auto mt-10" src="https://thumbs.dreamstime.com/z/collage-food-things-place-world-pictures-objects-landmark-landscape-touristic-153230562.jpg" alt="" />
+                    <img src="./src/Images/bg-2.png" alt="" /> 
+                    <img className="h-80 mx-auto mt-10" src="https://image.shutterstock.com/image-vector/stay-home-safe-lettering-typography-260nw-1675145770.jpg" alt="" />
                 </div>
+            </div>
+            <div className="flex space-x-2 md:flex-row flex-col p-16">
+            <div className=" w-full md:w-1/2">
+                <h1 className=" md:text-5xl text-4xl pb-8   font-serif">A Luxuries Hotel with Nature</h1>
+                <p className="text-gray-500 pb-8 sm:text-medium text-xl">Suscipit libero pretium nullam potenti. Interdum, blandit phasellus consectetuer dolor ornare dapibus enim ut tincidunt rhoncus tellus sollicitudin pede nam maecenas, dolor sem. Neque sollicitudin enim. Dapibus lorem feugiat facilisi faucibus et. Rhoncus.</p>
+                <button className="">
+                    <p className="hover:bg-blue">Learn More</p>
+                    </button>
+            </div>
+            <div className="flex space-x-2 pl-10 sm:pr- ">
+                <img className="lg:h-100%    pb-12"src="https://preview.colorlib.com/theme/montana/img/about/xabout_1.png.pagespeed.ic.LF5rkD9bee.webp" alt="" />
+                <img className="lg:h-100% invisible sm:visible   pt-12"src="https://preview.colorlib.com/theme/montana/img/about/xabout_2.png.pagespeed.ic.Iswjjsyaxg.webp" alt="" />
+            </div>
             </div>
 
 <div className="flex flex-col space-y-5  lg:flex-row lg:pt-5  lg:pb-0 lg:space-x-20">
