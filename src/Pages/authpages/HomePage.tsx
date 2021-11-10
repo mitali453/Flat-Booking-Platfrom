@@ -3,6 +3,8 @@ import RoomCards from "../../Components/HomeComponents/RoomCards";
 import Img from "../../Components/HomeComponents/Img";
 import Footer from "../../Components/HomeComponents/Footer";
 import Insta from "../../Components/HomeComponents/Insta";
+import Navbar from "../../Components/HomeComponents/Navbar";
+
 
 
 interface Props {
@@ -11,44 +13,9 @@ interface Props {
 const HomePage: FC<Props> = (props) => {
     return (
         <div className="scroll-none">
-            <div className="flex flex-col md:flex-row">
-                <div className="md:w-1/2 flex flex-col sm:flex-row">
-                    <div className="opacity-100 hover:opacity-80 group p-2 ">
-                        <h1 className=" absolute  transform translate-x-20 translate-y-56 animate-spin opacity-0 group-hover:opacity-100 font-bold text-2xl px-2 py-1 text-white border-2 border-double border-white flex  items-center" >Rooms<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg> </h1>
-                        <img className=" h-72 w-full" src="https://images.unsplash.com/photo-1566195992011-5f6b21e539aa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWwlMjByb29tfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="" />
-                    </div>
-                    <div className=" opacity-100 hover:opacity-80 group p-2">
-                        <h1 className=" absolute  transform translate-x-8 translate-y-56 animate-spin opacity-0 group-hover:opacity-100 font-bold text-2xl px-2 py-1 text-white border-2 border-double border-white flex  items-center" >Swimming Pool <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg> </h1>
-                        <img className="h-72 w-full" src="https://www.thespruce.com/thmb/BRypiZq1HM_T52EgRr4tmVylIfM=/1500x1028/filters:no_upscale():max_bytes(150000):strip_icc()/KeyResidentialFtns-5a9470d218ba010037643a30.jpg" alt="" />
-                    </div>
-                </div>
-
-                <div className="flex flex-col sm:flex-row md:w-1/2 ">
-                    <div className="opacity-100 hover:opacity-80 group p-2 ">
-                        <h1 className=" absolute  transform translate-x-24 translate-y-56 animate-spin opacity-0 group-hover:opacity-100 font-bold text-2xl px-2 py-1 text-white border-2 border-double border-white flex  items-center" >Gardening <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg></h1>
-                        <img className="h-72 w-full" src="https://worstroom.com/wp-content/uploads/2019/08/apartment-balcony-garden-around-benches.jpg" alt="" />
-                    </div>
-                    <div className="opacity-100 hover:opacity-80 group p-2">
-                        <h1 className=" absolute  transform translate-x-24 translate-y-56 animate-spin opacity-0 group-hover:opacity-100 font-bold text-2xl px-2 py-1 text-white border-2 border-double border-white flex  items-center" >Gym <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg> </h1>
-                        <img className="h-72 w-full" src="https://sebringdesignbuild.com/wp-content/uploads/2018/01/Extraordinary-Home-Gym-Design-Ideas-20_Sebring-Design-Build.jpg" alt="" />
-                    </div>
-                </div>
-            </div>
-            {/* 4 images in 1 div */}
-
-
-            {/* marquee text */}
-
-
-            <div className="  sm:h-96 pb-5 font-serif ">
+           <Navbar></Navbar> 
+           <div className="h-10"></div>
+           <div className="  sm:h-96 pb-5 font-serif ">
                 <div className="text-center p-4  pt-14 text-lg text-yellow" >
                     <p>WELCOME TO AASHIYANA</p>
                 </div>
@@ -100,6 +67,48 @@ const HomePage: FC<Props> = (props) => {
                 </div>
             </div>
 
+           
+
+
+
+            <div className="flex flex-col md:flex-row">
+                <div className="md:w-1/2 flex flex-col sm:flex-row">
+                    <div className="opacity-100 hover:opacity-80 group p-2 ">
+                        <h1 className=" absolute  transform translate-x-20 translate-y-56 animate-spin opacity-0 group-hover:opacity-100 font-bold text-2xl px-2 py-1 text-white border-2 border-double border-white flex  items-center" >Rooms<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg> </h1>
+                        <img className=" h-72 w-full" src="https://images.unsplash.com/photo-1566195992011-5f6b21e539aa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWwlMjByb29tfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="" />
+                    </div>
+                    <div className=" opacity-100 hover:opacity-80 group p-2">
+                        <h1 className=" absolute  transform translate-x-8 translate-y-56 animate-spin opacity-0 group-hover:opacity-100 font-bold text-2xl px-2 py-1 text-white border-2 border-double border-white flex  items-center" >Swimming Pool <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg> </h1>
+                        <img className="h-72 w-full" src="https://www.thespruce.com/thmb/BRypiZq1HM_T52EgRr4tmVylIfM=/1500x1028/filters:no_upscale():max_bytes(150000):strip_icc()/KeyResidentialFtns-5a9470d218ba010037643a30.jpg" alt="" />
+                    </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row md:w-1/2 ">
+                    <div className="opacity-100 hover:opacity-80 group p-2 ">
+                        <h1 className=" absolute  transform translate-x-24 translate-y-56 animate-spin opacity-0 group-hover:opacity-100 font-bold text-2xl px-2 py-1 text-white border-2 border-double border-white flex  items-center" >Gardening <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg></h1>
+                        <img className="h-72 w-full" src="https://worstroom.com/wp-content/uploads/2019/08/apartment-balcony-garden-around-benches.jpg" alt="" />
+                    </div>
+                    <div className="opacity-100 hover:opacity-80 group p-2">
+                        <h1 className=" absolute  transform translate-x-24 translate-y-56 animate-spin opacity-0 group-hover:opacity-100 font-bold text-2xl px-2 py-1 text-white border-2 border-double border-white flex  items-center" >Gym <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg> </h1>
+                        <img className="h-72 w-full" src="https://sebringdesignbuild.com/wp-content/uploads/2018/01/Extraordinary-Home-Gym-Design-Ideas-20_Sebring-Design-Build.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+            {/* 4 images in 1 div */}
+
+
+            {/* marquee text */}
+
+
+            
 
             <div className="h-56 w-full bg-gray-100">
                 <h1 className="text-yellow text-sm text-center pt-12">AASHIYANA APARTMENTS</h1>
@@ -113,16 +122,16 @@ const HomePage: FC<Props> = (props) => {
                     <div className="md:w-1/4" ><Img image="https://www.interiorzine.com/wp-content/uploads/2017/11/50-small-studio-apartment-design-ideas-modern-tiny-clever.jpg" ></Img></div>
                     <div className="md:w-1/4"><RoomCards type={"Studio Apartment"} Rs={" Rs.5000.00"} ></RoomCards></div>
                     <div className="md:w-1/4" ><Img image="https://www.interiorzine.com/wp-content/uploads/2017/11/50-small-studio-apartment-design-ideas-modern-tiny-clever.jpg" ></Img></div>
-                    <div className="md:w-1/4"><RoomCards type={"Studio Apartment"} Rs={" Rs.5000.00"} ></RoomCards></div>
+                    <div className="md:w-1/4"><RoomCards type={"Micro Apartment"} Rs={" Rs.5000.00"} ></RoomCards></div>
 
 
 
                 </div>
                 <div className="flex flex-col md:flex-row  pb-2 md:pb-0">
 
-                    <div className=" w-full md:w-1/4"><RoomCards type={"Studio Apartment"} Rs={"Rs.1000.00"}  ></RoomCards></div>
+                    <div className=" w-full md:w-1/4"><RoomCards type={"Alcove Studio "} Rs={"Rs.1000.00"}  ></RoomCards></div>
                     <div className="md:w-1/4" ><Img image="https://i.redd.it/slja8x86d5n11.jpg" ></Img></div>
-                    <div className="md:w-1/4"><RoomCards type={"Studio Apartment"} Rs={" Rs.5000.00"} ></RoomCards></div>
+                    <div className="md:w-1/4"><RoomCards type={"Garden Apartment"} Rs={" Rs.5000.00"} ></RoomCards></div>
                     <div className="md:w-1/4"><Img image="https://i2.au.reastatic.net/800x600/da454e31c14de6d77b51d02581c114350aebfe81d8fa57efaecdae7fbddb7d1c/main.jpg" ></Img></div>
                 </div>
 
@@ -131,9 +140,9 @@ const HomePage: FC<Props> = (props) => {
 
 
                     <div className="md:w-1/4"><Img image="https://media.designcafe.com/wp-content/uploads/2020/09/25151949/master-bedroom-2bhk-interior-ideas.jpg" ></Img></div>
-                    <div className="md:w-1/4"><RoomCards type={"Studio Apartment"} Rs={" Rs.5000.00"} ></RoomCards></div>
+                    <div className="md:w-1/4"><RoomCards type={"Loft Apartment"} Rs={" Rs.5000.00"} ></RoomCards></div>
                     <div className="md:w-1/4" ><Img image="https://www.cbreresidential.com/resources/fileassets/GB-ReapIT-cbrrps-WES210352/7a07bdc9/WES210352_16_Photo_2_large.jpg" ></Img></div>
-                    <div className="md:w-1/4"><RoomCards type={"Studio Apartment"} Rs={" Rs.5000.00"} ></RoomCards></div>
+                    <div className="md:w-1/4"><RoomCards type={"Convertible Apartment"} Rs={" Rs.5000.00"} ></RoomCards></div>
                 </div>
             </div>
 
