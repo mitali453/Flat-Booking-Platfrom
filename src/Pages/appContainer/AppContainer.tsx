@@ -16,7 +16,7 @@ const AppContainer: FC<Props> = (props) => {
         <div>
             <BrowserRouter>
                 <NavToggle sideNavToggle={() => setShowSideBar(!showSidebar)}></NavToggle>
-                <div className="flex flex-row ">
+                <div className="flex flex-row">
                     <SideNav Open={showSidebar}></SideNav>
                     <Switch>
                         <Route path="/search">
