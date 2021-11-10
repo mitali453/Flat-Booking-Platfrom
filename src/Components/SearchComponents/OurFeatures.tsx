@@ -21,11 +21,11 @@ const OurFeautures: FC<Props> = (props) => {
             </div>
             <div>
                 <FeatureApart image={Shop} ></FeatureApart>
-                <h1 className="p-4">SHOP</h1>
+                <h1 className="p-4">SHOPS</h1>
             </div>
             <div>
                 <FeatureApart image={Travel} ></FeatureApart>
-                <h1 className="p-4">TRAVEL</h1>
+                <h1 className="p-4">PARKING</h1>
             </div>
         </div>
     );
